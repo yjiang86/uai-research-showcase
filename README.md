@@ -56,3 +56,10 @@ are adapted.
 See [included/excluded material](INCLUDE_EXCLUDE.md), [references](REFERENCES.md)
 and [rights and attribution](NOTICE.md). This is a private evaluation copy;
 no open-source license is granted for the original project code.
+
+## Current UAI_1 qualification
+
+Read [UAI1_STATUS.md](UAI1_STATUS.md) and the phase-specific research-status
+table before interpreting engineering passes as scientific success. The
+included runtime has snapshot/restore, not a generic rollback interface.
+Application-level sealed restoration is a different, unbundled consumer.

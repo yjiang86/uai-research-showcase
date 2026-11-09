@@ -21,3 +21,10 @@
 All demonstration records are synthetic. Referenced external projects are
 attributed; their repositories and datasets are not bundled. Private operating
 and source-provenance evidence is kept outside this delivery repository.
+
+The CoreV2Memory sealed-application facade is not exported with this minimal
+subset: its benchmark/provider-dispatch imports are outside the selected
+dependency closure. The original application demo recommendation is retained
+as internal design evidence, not shipped as a non-working portable example.
+Only the approved public UAI_1 prose is copied from the specialist factcheck;
+its internal evidence archive is not included.

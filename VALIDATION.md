@@ -5,7 +5,7 @@ on Windows. No third-party packages were installed.
 
 | Check | Actual result |
 |---|---|
-| Closed file set | 36 intended files; missing 0, extra 0 |
+| Closed file set | 37 intended files (one public documentation supplement added); missing 0, extra 0 |
 | Runtime extraction | 18 original module contents match their source digests |
 | Selected existing test/fixture function bodies | AST-equivalent; import context and wrappers adapted |
 | `python -m unittest discover -s tests -t . -v` | 18 tests passed |
@@ -25,3 +25,8 @@ large-model continual learning and biological validation were not run here.
 The content scan is a bounded audit, not proof that every possible secret or
 privacy issue is detectable. Original history and raw operating evidence are
 excluded by construction and are audited separately before publication.
+
+The UAI_1 documentation-only successor preserves every validated library,
+test and example byte. The 18 tests and four fixtures were not rerun for this
+text correction. The corrected 37-file closed set and its reachable history
+receive a new content scan before the successor is pushed.

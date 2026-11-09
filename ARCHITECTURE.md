@@ -37,3 +37,17 @@ The runtime uses only the Python standard library. It has no model client,
 training loop, scheduler, hardware controller or network transport. The
 structured update input is explicit in the examples so their outcomes cannot
 be mistaken for an autonomous language-model extraction experiment.
+
+## Exact interface boundary
+
+`UAIMemoryRuntimeV2` provides `snapshot` and `restore`, without a generic
+`rollback` method. The separate `CoreV2Memory` application facade also has no
+generic rollback method; its sealed journal close/restore is durable recovery,
+not arbitrary natural-language rollback. That application wrapper is outside
+this subset because it imports benchmark/provider dispatch and adapter modules.
+The included demos exercise the actual structured runtime; they do not claim
+to execute the omitted sealed-application consumer.
+
+Legacy store rollback, historical `VersionedTextMemoryV3`, the current CoreV2
+runtime, and a later out-of-tree v0.3 extension are distinct implementations.
+Their tests, scientific conclusions and adoption states are not interchangeable.
